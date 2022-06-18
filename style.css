@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  margin: 50px 100px;
+  justify-content: center;
+  background-image: url("./bg-intro-desktop.png");
+  background-size: cover;
+  background-color: hsl(0, 100%, 74%);
+}
+main {
+  padding: 70px;
+}
+.signup,
+.signup-tab {
+  width: 50%;
+  float: left;
+  padding: 25px;
+}
+.signup {
+  margin-top: 70px;
+color: hsl(0, 0%, 100%);
+}
+.head {
+  font-weight: 700;
+  padding-right: 100px;
+}
+.text {
+  font-weight: 400;
+}
+.try {
+  background: hsl(248, 32%, 49%);
+  text-align: center;
+  padding: 8px 30px;
+  border-radius: 8px;
+  align-items: center;
+  color: hsl(0, 0%, 100%);
+  font-weight: 400;
+  font-size: 15px;
+  box-shadow: -2px 3px 5px rgb(78, 74, 74);
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 5px 5px 0 hsl(246, 25%, 77%);
+}
+input,
+button {
+  height: 40px;
+  border-radius: 5px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  border: 1px solid hsl(246, 25%, 77%);
+}
+input {
+  color: hsl(148, 10%, 26%);
+}
+button {
+  background-color: hsl(154, 59%, 51%);
+  color: #ffffff;
+  font-weight: 500;
+}
+.red {
+  color: hsl(0, 100%, 74%);
+}
+form p {
+  color: hsl(246, 25%, 77%);
+  font-size: 12px;
+  text-align: center;
+}
+
+@media only screen and (max-width:425px){
+  body{
+      font-size: 16px;
+      margin: 5px;
+      font-family: 'Poppins', sans-serif;
+      justify-content: center;
+      background-image: url('./bg-intro-mobile.png' );
+      padding: 5px;
+      background-size: cover;
+      background-color: hsl(0, 100%, 74%);
+  }
+  main{
+      justify-content: center;
+      grid-template-columns: 1fr;
+      margin: 0;
+      padding: 20px 10px;
+  }
+  .signup-msg, .signup-block{
+      padding: 2px;
+  }
+  .signup-msg{
+      margin-top: 5px;
+      text-align: center;
+      color: hsl(0, 0%, 100%);
+  }
+  .title{
+      font-weight: 700;
+      padding: 0;
+  }
+  .text{
+      line-height: 30px;
+  }
+
+}
+
+@media only screen and (max-width:768px){
+  body {
+      font-size: 16px;
+      margin: 5px;
+      font-family: 'Poppins', sans-serif;
+      justify-content: center;
+      background-image: url('./bg-intro-mobile.png' );
+      padding: 5px;
+      background-size: cover;
+      background-color: hsl(0, 100%, 74%);
+  }
+  main {
+      justify-content: center;
+      grid-template-columns: 1fr;
+      margin: 0;
+      padding: 30px;
+  }
+  .signup-msg, .signup-block {
+      padding: 2px;
+  }
+  .signup-msg {
+      margin-top: 5px;
+      text-align: center;
+      color: hsl(0, 0%, 100%);
+  }
+  .title {
+      font-weight: 700;
+      padding: 0;
+  }
+  .text {
+      line-height: 30px;
+    }
